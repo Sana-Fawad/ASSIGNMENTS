@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="registration.css">
+</head>
+        <!-- QUESTION 4 -->
+<body> 
+    <form>
+        <label for="f_name" id="f_name">Full Name:</label>
+        <input type="text" id="f_name" required><br><br>
+
+        <label for="emails">Email:</label>
+        <input type="email" id="emails" required><br><br>
+
+        <label for="pass">Password:</label>
+        <input type="password" id="pass" required><br><br>
+
+        <label for="dob">Date Of Birth:</label>
+        <input type="date" id="dob"><br>
+<div class="flex">
+        <label for="gender_">Gender:</label><br>
+        <input type="radio" value="Male" id="gender1_">
+        <label for="gender_">Male</label><br>
+        <input type="radio" value="Female" id="gender2_">
+         <label for="gender_">Female</label><br>
+           <label for="city_">City:</label><br>
+             <select name="city_" id="city_">
+               <option value="Karachi">Karachi</option>
+               <option value="Lahore">Lahore</option>
+               <option value="Quetta">Quetta</option>
+               <option value="Islamabad">Islamabad</option>
+             </select>
+</div>
+          <label for="FAV_language"> Favorite Programming Languages: </label><br>
+          <input type="checkbox" id="FAV_language" value="CSS">
+          <label for="FAV_language">CSS</label><br>
+          <input type="checkbox" id="FAV_language" value="HTML">
+          <label for="FAV_language">HTML</label><br>
+          <input type="checkbox" id="FAV_language" value="Python">
+          <label for="FAV_language">Python</label><br>
+
+          
+                  <br>
+
+             <label for="abt_"> About Yourslef: </label><br>
+             <textarea name="About Yourslef" id="abt_" rows="10" cols="30"></textarea><br>
+
+
+             <input type="submit" id="submit"><br><br>
+             <input type="reset" id="reset">
+                        
+    </form>
+</body> <!-- END -->
+</html>

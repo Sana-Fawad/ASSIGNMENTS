@@ -1,0 +1,43 @@
+html{background-color: rgb(231, 153, 153);}
+h1 {
+    font-size:1in;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', serif ;
+    color:darkblue;
+}
+a {
+    color: blue;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+a:hover {
+    color:purple;
+    text-decoration: overline;
+}
+.box
+{
+border: 0.5rem solid brown;
+border-radius:12px;
+width:100px ;
+height: auto;
+background-color: azure;
+margin: 20px;
+padding: 10px;}
+
+.box img{
+    width: 100%;
+    height: auto;
+display: block;
+}
+
+.link{
+    border: 5px solid red;
+    border-width:3px;
+    width: auto;
+    height: auto;
+    background: white;
+    margin: 5px;
+   padding: 2px;
+   object-fit: fill;
+   display: block;
+    
+}
