@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const employees = [
+  { name: 'Ali', department: 'IT', salary: 80000 },
+  { name: 'Sara', department: 'HR', salary: 70000 },
+  { name: 'Ahmed', department: 'IT', salary: 95000 },
+  { name: 'Ayesha', department: 'Finance', salary: 85000 }
+];
+let i1 = employees.filter(employees => employees.department === 'IT');
+console.log("IT Department Employees:", i1);
+
+let i2 = employees.find(employees => employees.salary >= 90000);
+console.log("90000 slary Employees:", i2);
+
+let i3 = employees.map(employees =>  employees.name);
+console.log("IT Department Employee Names :", i3);
+
+let i4= employees.reduce((sum, num) => sum + num.salary , 0);
+console.log(" salary sum :", i4);
+
+    </script>
+</body>
+</html>

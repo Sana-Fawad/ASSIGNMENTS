@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const amounts = [1200, 450, 3000, 750, 1500, 250, 4200, 900]
+console.log("orignal array : " + amounts);
+console.log("the value greater than 2000 is :  " +amounts.find(value));
+function value(amounts){
+    return amounts>=2000;
+}
+
+
+ console.log(amounts.filter(value2));
+ function value2(amounts) {
+    return amounts>=1000;
+ }
+
+const sumAll = (sum, num) => sum + num;
+console.log("summ of amounts : " + amounts.reduce(sumAll, 0));
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script >
+        const fruits = new Map([
+  ["apples", 500],
+  ["bananas", 300],
+  ["oranges", 200]
+]);
+fruits.set("grapes",900);
+fruits.set("apples",900);
+console.log("THE QUANTITY OF A VALUE IS : " + fruits.get("apples"))
+console.log(fruits.has("apples") + " , it has apples ");
+fruits.delete("oranges");
+console.log(fruits.size + " is the number of the fruits ")
+console.log( fruits)
+let text ="";
+fruits.forEach (function(value,key)
+{
+text += key + '=' +  value + "\n" ;
+});
+console.log(text);
+fruits.clear()
+console.log(fruits.size + " is the number")
+
+    </script>
+</body>
+</html>

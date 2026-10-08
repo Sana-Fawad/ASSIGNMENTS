@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const student1 = {
+    name: "Ayan Khan",
+    class: "Grade 10",
+    chemistryMarks: 85,
+    mathematicsMarks: 92,
+    urduMarks: 78,
+    englishMarks: 88,
+    calculateResult: function() {
+        const total = this.chemistryMarks + this.mathematicsMarks + this.urduMarks + this.englishMarks;
+        const percentage = (total / 400) * 100;
+        return percentage;
+    }
+};
+
+console.log("Student Name: " + student1.name);
+console.log("Class: " + student1.class);
+
+console.log("Chemistry Marks (Bracket Notation): " + student1["chemistryMarks"]);
+
+const percentage1 = student1.calculateResult();
+console.log(student1.name + " achieved a percentage of " + percentage1 + "%.");
+
+const student2 = {
+    name: "Eshal Ahmed",
+    class: "Grade 10",
+    chemistryMarks: 74,
+    mathematicsMarks: 85,
+    urduMarks: 82,
+    englishMarks: 79,
+    calculateResult: function() {
+        const total = this.chemistryMarks + this.mathematicsMarks + this.urduMarks + this.englishMarks;
+        const percentage = (total / 400) * 100;
+        return percentage;
+    }
+};
+
+const percentage2 = student2.calculateResult();
+console.log(student2.name + " achieved a percentage of " + percentage2 + "%.");
+
+console.log("Student 2 before removing a property:", student2);
+
+delete student2.urduMarks;
+
+console.log("Student 2 after removing urduMarks:", student2);
+    </script>
+</body>
+</html>

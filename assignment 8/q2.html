@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const marks =[45, 78, 92, 61, 88, 54, 73, 95];
+        console.log("the orignal array of marks is :  "+ marks )
+        function increase(marks) {
+               return marks + 5 ;
+        }
+        console.log("marks increased are :  " + marks.map(increase));
+        let mark2 = marks.filter(marks => marks>=70 );
+         let mark3 = marks.find(marks => marks>90 );
+         console.log("the marks gretate than 70 are :   " + mark2)
+         console.log("the marks greater than 90 is :   " + mark3)
+      let marks4 = marks.reduce((sum , num) => sum + num , 0); 
+      console.log( " the total marks is :  "+marks4)
+    </script>
+</body>
+</html>
